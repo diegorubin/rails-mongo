@@ -1,0 +1,18 @@
+<h1>Anotações</h1>
+<p>
+  <%= link_to 'Nova Anotação', :action => 'new' %>
+</p>
+
+<table>
+  <tr>
+    <td>Titulo</td>
+    <td>Data</td>
+  </tr>
+  <% @notes.each do |note| %>
+    <tr>
+      <td><%= link_to note.title, :action => 'show', :id => note.id %></td>
+      <td><%= note.date %></td>
+    </tr>
+  <% end %>
+</table>
+

@@ -1,0 +1,12 @@
+<h1><%= @note.title %></h1>
+
+<p>
+  <%= @note.text %>
+</p>
+
+<%= link_to "Editar", :action => 'edit', :id => @note.id %>
+<br>
+<%= link_to "Remover",@note, :method => 'delete', :confirm => "Deseja realmente remover esta anotação?" %>
+<br>
+<%= link_to "Todas Anotações", :action => "index" %>
+

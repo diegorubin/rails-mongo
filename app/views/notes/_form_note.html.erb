@@ -1,0 +1,19 @@
+<% form_for(@note) do |f| %>
+
+<p>
+  Título:
+  <br>
+  <%= f.text_field :title %>
+</p>
+<p>
+  Texto:
+  <br>
+  <%= f.text_area :text %>
+</p>
+
+<p>
+  <%= submit_tag "Salvar" %>
+</p>
+
+<% end %>
+
